@@ -22,7 +22,7 @@ rpm-ostree install mtr neovim syncthing
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
-dnf remove dnf-plugins-core
+dnf remove -y dnf-plugins-core
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
