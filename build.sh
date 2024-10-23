@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # Klassy
 rpm-ostree install dnf-plugins-core
-rpm-ostree config-manager --add-repo https://download.opensuse.org/repositories/home:paul4us/Fedora_40/home:paul4us.repo
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:paul4us/Fedora_40/home:paul4us.repo
 rpm-ostree install klassy
 
 # this installs a package from fedora repos
