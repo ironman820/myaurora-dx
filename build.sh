@@ -26,3 +26,8 @@ dnf remove -y dnf-plugins-core
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh -b
+rm Miniconda3-latest-Linux-x86_64.sh
