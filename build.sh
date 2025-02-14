@@ -17,8 +17,8 @@ dnf-3 config-manager --add-repo https://download.opensuse.org/repositories/home:
 rpm-ostree install klassy
 
 # Ghostty
-dnf copr enable pgdev/ghostty
-dnf install ghostty
+dnf copr enable -y pgdev/ghostty
+rpm-ostree install ghostty
 
 # this installs a package from fedora repos
 rpm-ostree install mtr neovim syncthing
