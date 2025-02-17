@@ -14,7 +14,7 @@ RELEASE="$(rpm -E %fedora)"
 # Klassy
 rpm-ostree install dnf-plugins-core
 dnf-3 config-manager --add-repo https://download.opensuse.org/repositories/home:paul4us/Fedora_41/home:paul4us.repo
-rpm-ostree update
+dnf update -y
 rpm-ostree install klassy
 
 # Ghostty
