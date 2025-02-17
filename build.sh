@@ -11,13 +11,13 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# Klassy
+# Klassy - Depreciated Dependencies
 rpm-ostree install dnf-plugins-core
-dnf-3 config-manager --add-repo https://download.opensuse.org/repositories/home:paul4us/Fedora_40/home:paul4us.repo
-rpm-ostree install klassy
+# dnf-3 config-manager --add-repo https://download.opensuse.org/repositories/home:paul4us/Fedora_41/home:paul4us.repo
+# rpm-ostree install klassy
 
 # Ghostty
-dnf copr enable -y pgdev/ghostty
+dnf5 copr enable -y pgdev/ghostty
 rpm-ostree install ghostty
 
 # this installs a package from fedora repos
@@ -26,7 +26,7 @@ rpm-ostree install mtr neovim syncthing
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
-dnf remove -y dnf-plugins-core
+dnf5 remove -y dnf-plugins-core
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
