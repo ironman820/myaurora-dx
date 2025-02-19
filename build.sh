@@ -21,14 +21,10 @@ dnf5 copr enable -y pgdev/ghostty
 rpm-ostree install ghostty
 
 # this installs a package from fedora repos
-rpm-ostree install mtr neovim syncthing
+rpm-ostree install mtr neovim
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
-
-wget -O /tmp/yEd-3.25-setup.sh "https://www.yworks.com/resources/yed/demo/yEd-3.25_with-JRE23_64-bit_setup.sh"
-chmod +x /tmp/yEd-3.25-setup.sh
-/tmp/yEd-3.25-setup.sh -q -varfile /tmp/response.varfile
 
 dnf5 remove -y dnf-plugins-core
 #### Example for enabling a System Unit File
