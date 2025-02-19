@@ -1,0 +1,9 @@
+# install4j response file for yEd Graph Editor 3.25
+createDesktopLinkAction$Boolean=true
+executeLauncherAction$Boolean=false
+sys.adminRights$Boolean=true
+sys.adminRightsUiRootUnix$Boolean=false
+sys.installationDir=/usr/local/yEd
+sys.languageId=en
+sys.programGroupDisabled$Boolean=false
+sys.symlinkDir=/usr/local/bin
