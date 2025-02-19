@@ -21,7 +21,7 @@ dnf5 copr enable -y pgdev/ghostty
 rpm-ostree install ghostty
 
 # this installs a package from fedora repos
-rpm-ostree install mtr neovim syncthing
+rpm-ostree install mtr neovim
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
