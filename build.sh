@@ -11,6 +11,9 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# Attempt to install Resilio Sync gpg keys
+rpm --import https://linux-packages.resilio.com/resilio-sync/key.asc
+
 # Klassy - Depreciated Dependencies
 rpm-ostree install dnf-plugins-core
 # dnf-3 config-manager --add-repo https://download.opensuse.org/repositories/home:paul4us/Fedora_41/home:paul4us.repo
