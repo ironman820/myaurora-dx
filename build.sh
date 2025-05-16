@@ -13,6 +13,8 @@ RELEASE="$(rpm -E %fedora)"
 
 # Attempt to install Resilio Sync gpg keys
 rpm --import https://linux-packages.resilio.com/resilio-sync/key.asc
+printf "[resilio-sync]\nname=Resilio Sync\nbaseurl=https://linux-packages.resilio.com/resilio-sync/rpm/\$basearch\nenabled=1\ngpgcheck=1\n" >/etc/yum.repos.d/resilio-sync.repo
+rmp-ostree install resilio-sync
 
 # Klassy - Depreciated Dependencies
 rpm-ostree install dnf-plugins-core
