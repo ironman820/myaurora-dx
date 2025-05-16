@@ -26,7 +26,9 @@ dnf5 copr enable -y pgdev/ghostty
 rpm-ostree install ghostty
 
 # this installs a package from fedora repos
-rpm-ostree install mtr neovim
+rpm-ostree install mtr neovim snapd
+ln -s /var/lib/snapd/snap /snap
+snap install snap-store
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
