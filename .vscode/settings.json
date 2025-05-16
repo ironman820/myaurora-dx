@@ -1,4 +1,4 @@
 {
-  "gitdoc.enabled": true,
+  "gitdoc.enabled": false,
   "cSpell.words": ["copr", "Ghostty", "Klassy", "ostree", "pgdev", "Resilio"]
 }
